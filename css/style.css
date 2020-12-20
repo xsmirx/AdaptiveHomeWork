@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -84,5 +85,306 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.eot");
+  src: local("☺"), url("/fonts/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy-Bold.ttf") format("truetype"), url("/fonts/Gilroy-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.eot");
+  src: local("☺"), url("/fonts/Gilroy-Medium.woff") format("woff"), url("/fonts/Gilroy-Medium.ttf") format("truetype"), url("/fonts/Gilroy-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Gilroy";
+  background-color: #FFFFFF;
+  font-size: 18px;
+}
+
+a {
+  color: #828282;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+h1 {
+  font-size: 47px;
+  font-weight: bold;
+  display: table-caption;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+.conteiner {
+  max-width: 985px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 0 0 105px 0;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+  position: relative;
+}
+
+.header__menu:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0px;
+  background-color: #828282;
+}
+
+.header__link_active {
+  font-weight: bold;
+}
+
+.header__link_active a {
+  color: #070707;
+}
+
+.header__row {
+  padding: 40px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__title {
+  line-height: 59px;
+}
+
+.header__subtitle {
+  line-height: 22px;
+  position: relative;
+  bottom: 8px;
+}
+
+.header__lang {
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  bottom: 8px;
+}
+
+.header__lang span {
+  font-weight: bold;
+}
+
+.header__ru_active {
+  font-weight: bold;
+  color: #070707;
+}
+
+.header__eng_active {
+  font-weight: bold;
+  color: #070707;
+}
+
+.header__img {
+  max-width: 100%;
+  max-height: 387px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about {
+  background-color: #F6F6F6;
+  padding: 120px 0 110px 0;
+  text-align: center;
+}
+
+.about__title {
+  line-height: 42px;
+  margin: 0 0 30px 0;
+}
+
+.about__text {
+  line-height: 22px;
+}
+
+.about__text p {
+  margin: 0 0 40px 0;
+}
+
+.about__text p:last-child {
+  margin: 0;
+}
+
+.skills {
+  padding: 90px 0 110px 0;
+  text-align: center;
+}
+
+.skills__title {
+  margin: 0 0 70px 0;
+}
+
+.skills__subtitle {
+  margin: 0 0 85px 0;
+}
+
+.skills__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills__col {
+  width: 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills__logo {
+  margin: 0 0 25px 0;
+  height: 88px;
+}
+
+.skills__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  margin: 0 0 40px 0;
+}
+
+.skills__rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills__star {
+  background: url(/img/Icons/stars/Starnotactive.svg);
+  position: relative;
+  height: 20px;
+  width: 20px;
+}
+
+.skills__star_active {
+  background: url(/img/Icons/stars/Star.svg);
+  position: relative;
+  height: 20px;
+  width: 20px;
+}
+
+.portfolio {
+  padding: 115px 0 100px 0;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+.portfolio__title {
+  margin: 0 0 60px 0;
+}
+
+.portfolio__object {
+  margin: 0 0 100px 0;
+}
+
+.portfolio__img {
+  max-width: 100%;
+  margin: 0 0 45px 0;
+}
+
+.portfolio__link {
+  color: #070707;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contacts {
+  padding: 115px 0 125px 0;
+  text-align: center;
+}
+
+.contacts__title {
+  margin: 0 0 40px 0;
+}
+
+.contacts__text {
+  margin: 0 0 40px 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contacts__btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #070707;
+  color: #FFFFFF;
+  border-radius: 26px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 85px 0;
+}
+
+.contacts__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 345px;
+  margin: 0 auto 45px;
+}
+
+.contacts__liketext {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
 }
 /*# sourceMappingURL=style.css.map */
