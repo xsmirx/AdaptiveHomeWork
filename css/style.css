@@ -105,7 +105,7 @@ h6 {
 
 body {
   font-family: "Gilroy";
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 18px;
 }
 
@@ -140,6 +140,12 @@ h2 {
   padding: 0 0 105px 0;
 }
 
+@media (max-width: 1025px) {
+  .header {
+    padding: 0 0 10.25391% 0;
+  }
+}
+
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,12 +158,18 @@ h2 {
 }
 
 .header__menu:before {
-  content: '';
+  content: "";
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 100%;
   bottom: 0px;
   background-color: #828282;
+}
+
+@media (max-width: 1025px) {
+  .header__menu {
+    padding: 2.6455% 0;
+  }
 }
 
 .header__link_active {
@@ -179,6 +191,12 @@ h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (max-width: 1025px) {
+  .header__row {
+    padding: 4.2328% 0 5.29101% 0;
+  }
 }
 
 .header__title {
@@ -220,14 +238,26 @@ h2 {
 }
 
 .about {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 120px 0 110px 0;
   text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .about {
+    padding: 11.71875% 0 10.74219% 0;
+  }
 }
 
 .about__title {
   line-height: 42px;
   margin: 0 0 30px 0;
+}
+
+@media (max-width: 1025px) {
+  .about__title {
+    margin: 0 0 3.1746% 0;
+  }
 }
 
 .about__text {
@@ -242,17 +272,41 @@ h2 {
   margin: 0;
 }
 
+@media (max-width: 1025px) {
+  .about__text p {
+    margin: 0 0 4.2328% 0;
+  }
+}
+
 .skills {
   padding: 90px 0 110px 0;
   text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .skills {
+    padding: 8.78906% 0 10.74219% 0;
+  }
 }
 
 .skills__title {
   margin: 0 0 70px 0;
 }
 
+@media (max-width: 1025px) {
+  .skills__title {
+    margin: 0 0 7.40741% 0;
+  }
+}
+
 .skills__subtitle {
   margin: 0 0 85px 0;
+}
+
+@media (max-width: 1025px) {
+  .skills__subtitle {
+    margin: 0 0 8.99471% 0;
+  }
 }
 
 .skills__row {
@@ -278,9 +332,21 @@ h2 {
           justify-content: space-between;
 }
 
+@media (max-width: 1025px) {
+  .skills__col {
+    width: 17.56614%;
+  }
+}
+
 .skills__logo {
   margin: 0 0 25px 0;
-  height: 88px;
+  height: 53.01205%;
+}
+
+@media (max-width: 1025px) {
+  .skills__logo {
+    margin: 0 0 15.06024% 0;
+  }
 }
 
 .skills__name {
@@ -292,6 +358,12 @@ h2 {
   line-height: 17px;
   color: #828282;
   margin: 0 0 40px 0;
+}
+
+@media (max-width: 1025px) {
+  .skills__name {
+    margin: 0 0 24.09639% 0;
+  }
 }
 
 .skills__rate {
@@ -320,20 +392,44 @@ h2 {
 .portfolio {
   padding: 115px 0 100px 0;
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 1025px) {
+  .portfolio {
+    padding: 11.23047% 0 9.76562% 0;
+  }
 }
 
 .portfolio__title {
   margin: 0 0 60px 0;
 }
 
+@media (max-width: 1025px) {
+  .portfolio__title {
+    margin: 0 0 6.34921% 0;
+  }
+}
+
 .portfolio__object {
   margin: 0 0 100px 0;
+}
+
+@media (max-width: 1025px) {
+  .portfolio__object {
+    margin: 0 0 10.58201% 0;
+  }
 }
 
 .portfolio__img {
   max-width: 100%;
   margin: 0 0 45px 0;
+}
+
+@media (max-width: 1025px) {
+  .portfolio__img {
+    margin: 0 0 4.7619% 0;
+  }
 }
 
 .portfolio__link {
@@ -348,8 +444,20 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 1025px) {
+  .contacts {
+    padding: 11.23047% 0 12.20703% 0;
+  }
+}
+
 .contacts__title {
   margin: 0 0 40px 0;
+}
+
+@media (max-width: 1025px) {
+  .contacts__title {
+    margin: 0 0 4.2328% 0;
+  }
 }
 
 .contacts__text {
@@ -358,16 +466,28 @@ h2 {
   line-height: 22px;
 }
 
+@media (max-width: 1025px) {
+  .contacts__text {
+    margin: 0 0 4.2328% 0;
+  }
+}
+
 .contacts__btn {
   display: inline-block;
   padding: 15px 30px;
   background-color: #070707;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 26px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   margin: 0 0 85px 0;
+}
+
+@media (max-width: 1025px) {
+  .contacts__btn {
+    margin: 0 0 8.99471% 0;
+  }
 }
 
 .contacts__row {
@@ -379,6 +499,12 @@ h2 {
           justify-content: space-between;
   max-width: 345px;
   margin: 0 auto 45px;
+}
+
+@media (max-width: 1025px) {
+  .contacts__row {
+    margin: 0 auto 4.7619%;
+  }
 }
 
 .contacts__liketext {
