@@ -11,34 +11,48 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="header__wrap">
-                <div class="conteiner">
-                    <ul class="header__menu">
-                        <li class="header__link_active"><a href="#header">Home</a></li>
+            <div class="conteiner">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__link header__link_active"><a href="#header">Home</a></li>
                         <li class="header__link"><a href="#about">About me</a></li>
                         <li class="header__link"><a href="#skills">Skills</a></li>
                         <li class="header__link"><a href="#portfolio">Portfolio</a></li>
                         <li class="header__link"><a href="#contacts">Contacts</a></li>
                     </ul>
-                </div>
+                    <div class="header__lang lang">
+                        <div class="header__rotate">
+                            <a href="#" class="lang__ru">RU</a>
+                            <span>|</span>
+                            <a href="#" class="lang__eng lang__eng_active">ENG</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="conteiner">    
-                <div class="header__row">
-                    <div class="header__title">
+
+        </div>
+        <div class="top">
+            <div class="conteiner">
+                <div class="top__row">
+                    <div class="top__title">
                         <h1>Denis Novik</h1>
                     </div>
-                    <div class="header__subtitle">
+                    <div class="top__subtitle">
                         UX | UI designer
                         <br>
                         24 years old, Minsk
                     </div>
-                    <div class="header__lang">
-                        <a href="#" class="header__ru">RU</a>
+                    <div class="top__lang lang">
+                        <a href="#" class="lang__ru">RU</a>
                         <span>|</span>
-                        <a href="#" class="header__eng header__eng_active">ENG</a>
+                        <a href="#" class="lang__eng lang__eng_active">ENG</a>
                     </div>
                 </div>
-                <img src="/img/foto.jpg" alt="" class="header__img">
+                <img src="/img/foto.jpg" alt="" class="top__img">
+                <img src="/img/foto_mobile.jpg" alt="" class="top__img_mobile">
             </div>
         </div>
         <div class="about">
@@ -49,17 +63,14 @@
                 <div class="about__text">
                     <p>
                         Hi, I'm Denis – UX/UI designer from Minsk.
-                        <br>
                         I'm interested in design and everything connected with it.
                     </p>
                     <p>
                         I'm studying at courses "Web and mobile design
-                        <br>
                         interfaces" in IT-Academy.
                     </p>
                     <p>
                         Ready to implement excellent projects
-                        <br>
                         with wonderful people.
                     </p>
                 </div>
@@ -189,6 +200,8 @@
             </div>
         </div>
     </div>
+    <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="/js/scrypt.js"></script>
 </body>
 
 </html>
