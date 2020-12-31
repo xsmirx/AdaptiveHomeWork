@@ -672,14 +672,14 @@ h2 {
 }
 
 .skills__star {
-  background: url(/img/Icons/stars/Starnotactive.svg);
+  background: url(../img/Icons/stars/Starnotactive.svg);
   position: relative;
   height: 20px;
   width: 22px;
 }
 
 .skills__star_active {
-  background: url(/img/Icons/stars/Star.svg);
+  background: url(../img/Icons/stars/Star.svg);
   position: relative;
   height: 20px;
   width: 22px;
